@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skintific</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- icon -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>SKINTIFIC</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Produk</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart-icon">
+        <a href="./keranjang.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Produk</a></li>
+        <li><a href="#about">Tentang Kami</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav> -->
+
+    <section class="section" id="logo">
+      <h1>Skintific</h1>
+      <div class="logo">
+        <img src="/image/logo_skintific.png" alt="Logo Skintific" />
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <h2>Produk Populer</h2>
+      <div class="products">
+        <div class="product">
+          <img src="/image/cushion.jpg" alt="Skintific Cushion" />
+          <h3>Skintific Matte Cushion Perfect Stay Velvet 11ml</h3>
+          <p>Rp 209.950</p>
+          <button onclick="addToCart('Skintific Matte Cushion', 209950)">
+            Tambah ke Keranjang
+          </button>
+        </div>
+        <div class="product">
+          <img src="/image/masker.jpg" alt="Skintific Masker" />
+          <h3>Skintific Alaska Volcano Deep Pores Cleansing Clay Mask 55g</h3>
+          <p>Rp 169.159</p>
+          <button onclick="addToCart('Skintific Masker', 169159)">
+            Tambah ke Keranjang
+          </button>
+        </div>
+        <div class="product">
+          <img src="/image/serum.jpg" alt="Skintific Serum" />
+          <h3>Skintific Acid Peeling Solution Serum 30ml</h3>
+          <p>Rp 180.000</p>
+          <button onclick="addToCart('Skintific Serum', 180000)">
+            Tambah ke Keranjang
+          </button>
+        </div>
+        <div class="product">
+          <img src="/image/fecial wash.jpg" alt="Skintific Facial Wash" />
+          <h3>Skintific Ceramide Low pH Cleanser 80ml</h3>
+          <p>Rp 120.000</p>
+          <button onclick="addToCart('Skintific Facial Wash', 120000)">
+            Tambah ke Keranjang
+          </button>
+        </div>
+        <div class="product">
+          <img src="/image/moizturaizer.jpg" alt="Skintific Moisturizer" />
+          <h3>Skintific Ceramide Barrier Moisturizer Gel 30g</h3>
+          <p>Rp 170.000</p>
+          <button onclick="addToCart('Skintific Moisturizer', 170000)">
+            Tambah ke Keranjang
+          </button>
+        </div>
+        <div class="product">
+          <img src="/image/bahan-2.webp" alt="Skintific Sunscreen" />
+          <h3>Skintific Ceramide Serum Sunscreen SPF 50++++ 80ML</h3>
+          <p>Rp 140.000</p>
+          <button onclick="addToCart('Skintific Sunscreen', 140000)">
+            Tambah ke Keranjang
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Tentang Kami</h2>
+          <p>
+            Skintific adalah brand yang fokus pada perawatan kulit, khususnya
+            untuk menjaga kesehatan skin barrier atau lapisan pelindung kulit.
+            Produk kami dirancang untuk membantu mengatasi jerawat, kemerahan,
+            dan sensitivitas kulit.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="/image/bahan-3.jpg" alt="Tentang Kami" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Kontak Kami</h2>
+      <form>
+        <label for="name">Nama :</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="message">Pesan:</label><br />
+        <textarea id="message" name="message" rows="4" required></textarea
+        ><br /><br />
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>Dibuat dengan sepenuh ♥️ oleh <span>Erisa safitri</span></p>
+      <div class="social-links">
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
