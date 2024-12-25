@@ -39,3 +39,9 @@ function checkout() {
   updateCart();
   toggleCart(); // Sembunyikan keranjang
 }
+
+// Fungsi untuk toggle class 'nav-active' pada menu
+function toggleMenu() {
+  const navLinks = document.querySelector("nav ul");
+  navLinks.classList.toggle("nav-active");
+}

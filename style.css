@@ -7,20 +7,20 @@ body {
   /* Untuk mencegah konten di bawah header tertutup */
   padding-top: 70px; /* Sesuaikan dengan tinggi header */
 }
+
 /* Header */
 header {
-  background-color: #0a0a0a;
+  background-color: #1a1b1b;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed; /* Menjadikan header tetap di atas */
-  top: 0; /* Menempel pada bagian atas layar */
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%; /* Lebar header sama dengan layar */
-  z-index: 1000; /* Memastikan header berada di atas elemen lainnya */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan agar terlihat lebih menarik */
-  background-color: #333; /* Tambahkan latar belakang untuk header */
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo */
@@ -66,9 +66,17 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffcc00; /* Mengubah warna saat hover */
+  color: #ffcc00;
 }
 
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 20px;
+}
 /* Untuk mencegah konten tertutup oleh header tetap */
 body {
   padding-top: 50px; /* Sesuaikan dengan tinggi header */
@@ -322,20 +330,29 @@ body {
   color: #ffcc00;
 }
 
-/* Responsiveness */
+/* Media Query untuk perangkat kecil */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
+  /* Menyembunyikan menu navigasi pada perangkat kecil */
   nav ul {
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
+    text-align: center;
   }
 
   nav ul li {
     margin: 10px 0;
+  }
+
+  /* Menampilkan hamburger menu */
+  .hamburger-menu {
+    display: block;
+    margin-right: 30px;
+  }
+
+  /* Menampilkan navigasi ketika toggle aktif */
+  .nav-active {
+    display: block;
   }
 
   .cart-icon {
